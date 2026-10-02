@@ -1,0 +1,21 @@
+[project]
+name = "resume-ai-assistant"
+version = "1.0.0"
+description = "Compare a resume with a job description using OpenAI or Anthropic Claude."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# Prompt templates keep the notebook's original prose lines.
+"app/analyzer.py" = ["E501"]

@@ -1,0 +1,36 @@
+# Secrets: never commit real keys
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated outputs (may contain personal data)
+outputs/
+*.docx
+*.pdf
+!examples/*.pdf
+
+# OS / editors
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
